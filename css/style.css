@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.2rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+  --dark-black:#000000;
+  --site-white:#ffffff;
+  --site-snow:#fbfbfb;
+  --site-gold:#ffe10b;
+  --site-medium-gold:#ffe30b;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header-container{
+  background-color: var(--dark-black);
+}
+
+/*Header holding the flex display*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 1.15rem 0;
+}
+
+.header-logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Link on the top line of the header logo*/
+.header-logo-link-top{
+  color: var(--site-snow);
+  font-size: 1.8rem;
+}
+
+/*Creates the gold line above the bottom line of the header logo (cleaners)*/
+.header-logo-bottom::before{
+  content: "";
+  display: block;
+  width: 100%;
+  top: 0;
+  margin: .65rem auto .15rem auto;
+  border-top: solid var(--site-gold) 1px;
+}
+
+/*Link on the bottom line of the header logo*/
+.header-logo-link-bottom{
+  color: var(--site-gold);
+  letter-spacing: .25rem;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+}
+
+/*Navigation list in the header*/
+.header-navigation-list{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.header-navigation-list-li{
+  font-size: .8rem;
+}
+
+/*Links in the header navigation list*/
+.header-navigation-list-link{
+  color: var(--site-medium-gold);
+}
+
+/*The "updates" link in the header navigation list*/
+.header-updates-link{
+  color: var(--dark-black);
+  background-color: var(--site-white);
+  font-size: .75rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  padding: .55rem .75rem;
+  border-radius: 3px;
+}
+
