@@ -1,0 +1,91 @@
+/*Media queries start on line 79*/
+
+:root{
+  --dark-black:#000000;
+  --regular-black:#0a0a0a;
+  --nero-black:#222222;
+  --slate-grey:#333333;
+  --grey25:#404040;
+  --dim-grey:#636363;
+  --gainsboro-grey:#dddddd;
+  --light-grey:#e1e1e1;
+  --site-white:#ffffff;
+  --site-whitesmoke:#f7f7f7;
+  --site-snow:#fbfbfb;
+  --site-gold:#ffe10b;
+  --site-medium-gold:#ffe30b;
+}
+
+.page-title{
+  color: var(--nero-black);
+  font-size: 2.75rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem auto 2.5rem auto;
+  width: 75%;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
+
+.page-title::after{
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: solid var(--site-gold) thin;
+  padding-top: 2.5rem;
+}
+
+.page-subtitle{
+  color: var(--nero-black);
+  font-size: 1.55rem;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: .05rem;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+  line-height: 2.2rem;
+}
+
+.updates-container{
+  text-align: justify;
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.updates-description{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.updates-list{
+  margin: 1.5rem 0;
+}
+
+.updates-list-item{
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.updates-list-item:last-child{
+  margin-bottom: 0;
+}
+
+.updates-bold-text{
+  font-weight: 600;
+}
+
+@media(max-width:850px){
+  /*Decreased the font size and increased the line height*/
+  .page-title{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  /*Increased the width of the container*/
+  .updates-container{
+    width: 70%;
+  }
+}

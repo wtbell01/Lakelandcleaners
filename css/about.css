@@ -1,0 +1,197 @@
+/*Media query starts on line 124*/
+
+:root{
+  --dark-black:#000000;
+  --regular-black:#0a0a0a;
+  --nero-black:#222222;
+  --slate-grey:#333333;
+  --gray25:#404040;
+  --dim-grey:#636363;
+  --gainsboro-grey:#dddddd;
+  --light-grey:#e1e1e1;
+  --site-white:#ffffff;
+  --site-whitesmoke:#f7f7f7;
+  --site-snow:#fbfbfb;
+  --site-gold:#ffe10b;
+  --site-medium-gold:#ffe30b;
+}
+
+.page-title{
+  color: var(--nero-black);
+  font-size: 2.75rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem 0 2.5rem 0;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
+
+.page-title::after{
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: solid var(--site-gold) thin;
+  padding-top: 2.5rem;
+}
+
+.page-subtitle{
+  color: var(--nero-black);
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+}
+
+/*Container holding an image on the left and text on the right*/
+.top-container{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 3rem auto 3rem auto;
+}
+
+.left-side-container{
+  width: 33%;
+}
+
+.left-side-image-container{
+  height: 48vh;
+  width: 100%;
+}
+
+.left-side-image{
+  height: 100%;
+  width: 100%;
+}
+
+.left-side-image-caption{
+  font-size: .8rem;
+  text-align: center;
+}
+
+.right-side-text-container{
+  width: 60%;
+  padding-left: 2rem;
+}
+
+.right-side-text{
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.right-side-bold-text{
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*Bottom Container*/
+.bottom-container{
+  background-color: var(--gainsboro-grey);
+  padding: 4rem 0 14rem 0;
+}
+
+/*Bottom container holding 3 images and text below*/
+.bottom-box-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*Individual boxes in the bottom container holding an image and caption*/
+.bottom-box{
+  height: 30vh;
+  width: 25%;
+}
+
+/*Image for the bottom box*/
+.box-img{
+  height: 100%;
+  width: 100%;
+}
+
+.box-img-caption{
+  font-size: .8rem;
+  font-style: italic;
+  line-height: 1.3rem;
+  text-align: center;
+}
+
+@media(max-width:1085px){
+  /*Decreased the height of the image container to make the image smaller*/
+  .left-side-image-container{
+    height: 33vh;
+  }
+}
+
+@media(max-width:850px){
+  /*Decreased the font size and increased the line height*/
+  .page-title{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media(max-width:750px){
+  /*Assigned flex direction to column*/
+  .top-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-side-container{
+    width: 100%;
+  }
+  
+  /*Increased the size of the image*/
+  .left-side-image-container{
+    height: 55vh;
+    width: 73%;
+    margin: 0 auto;
+  }
+
+  .left-side-image-caption{
+    margin: 1rem 0 0 0;
+  }
+  
+  /*Increased the width and set text align to left*/
+  .right-side-text-container{
+    margin-top: 10rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  /*Bottom container holding 3 images and text below*/
+  .bottom-box-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Individual boxes in the bottom container holding an image and caption*/
+  .bottom-box{
+    height: 50vh;
+    width: 75%;
+    margin: 0 auto 8rem auto;
+  }
+
+  /*Individual boxes in the bottom container holding an image and caption*/
+  .bottom-box:last-child{
+    margin-bottom: 0;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+

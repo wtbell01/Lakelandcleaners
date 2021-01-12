@@ -1,0 +1,157 @@
+@media(max-width:1040px){
+  /*Hero section*/
+  .hero{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  /*Left side of the hero containing text*/
+  .hero-left{
+    height: 50%;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  /*Container for hero text on the left side*/
+  .hero-left-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding: 3rem 0;
+  }
+
+  /*Top line of the hero text*/
+  .hero-left-title-text{
+    font-size: 3rem;
+    margin: 2.5rem 0;
+    width: 70%;
+    line-height: 3rem;
+  }
+
+  /*Right side of the hero containing text*/
+  .hero-right{
+    height: 75vh;
+    width: 100%;
+  }
+
+  /*Image on the right side of the hero*/
+  .hero-right-image{
+    height: 100%;
+    width: 100%;
+  }
+
+  /*Take the height from 86vh to auto*/
+  .awards-container{
+    height: auto;
+  }
+
+  .awards-container-left{
+    display: none;
+  }
+  
+  .awards-container-right{
+    width: 100%;
+  }
+  
+  .awards-text-container{
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  
+}
+
+@media(max-width:980px){
+  /*Flex direction set to column and centers everything in the container*/
+  .operations-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Individual operations box*/
+  .operations-box{
+    width: 80%;
+    margin-bottom: 4rem;
+  }
+  
+  /*Decreased the size of the font*/
+  .delivery-notification-container-text{
+    font-size: 1.8rem;
+  }
+  
+  /*Image background for the contact-location div*/
+  .contact-location-background{
+    height: 145vh;
+  }
+
+  .contact-location-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left-side{
+    width: 80%;
+    margin: 3rem 0 0 0;
+    
+  }
+  
+  .location-right-side{
+    width: 80%;
+    margin: 3rem 0 0 0;
+  }
+  
+  .contact-location-title{
+    font-size: 2.45rem;
+    margin: 0 0 2rem 0;
+    width: 90%;
+    line-height: 2.5rem;
+  }
+  
+  .contact-location-description{
+    width: 90%;
+    line-height: 1.5rem;
+  }
+  
+  .contact-location-image-container{
+    height: 23vh;
+    width: 45%;
+  }
+  
+  .contact-location-button{
+    font-size: .75rem;
+    border: solid var(--site-white) 2.5px;
+  }
+}
+
+@media(max-width:800px){
+  /*Image background for the contact-location div*/
+  .contact-location-background{
+    height: 160vh;
+  }
+  
+  /*Width of the title and description text set to 100%*/
+  .contact-location-title,
+  .contact-location-description{
+    width: 100%;
+  }
+  
+  /*Set container to flex direction column*/
+  .footer-top-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*Width increased to 100% and add margin to the bottom of each footer box*/
+  .footer-box{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}

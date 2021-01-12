@@ -1,0 +1,140 @@
+:root{
+  --dark-black:#000000;
+  --regular-black:#0a0a0a;
+  --nero-black:#222222;
+  --slate-grey:#333333;
+  --grey25:#404040;
+  --dim-grey:#636363;
+  --gainsboro-grey:#dddddd;
+  --light-grey:#e1e1e1;
+  --site-white:#ffffff;
+  --site-whitesmoke:#f7f7f7;
+  --site-snow:#fbfbfb;
+  --site-gold:#ffe10b;
+  --site-medium-gold:#ffe30b;
+}
+
+.page-title{
+  color: var(--nero-black);
+  font-size: 2.75rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem 0 2.5rem 0;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
+
+.page-title::after{
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: solid var(--site-gold) thin;
+  padding-top: 2.5rem;
+}
+
+.page-subtitle{
+  color: var(--nero-black);
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.services-container{
+  width: 85%;
+  margin: 3rem auto;
+}
+
+/*Holds the service image on the left and text on the right*/
+.service-box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.service-box-img-container{
+  width: 33%;
+  height: 43vh;
+}
+
+.service-box-img{
+  width: 100%;
+  height: 100%;
+}
+
+/*Sets the width for the text on the right side of the service box*/
+.service-box-text-container{
+  width: 57%;
+}
+
+/*The bolded service name above the service paragraph*/
+.service-box-text-title{
+  color: var(--grey25);
+  font-weight: 600;
+  letter-spacing: .06rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-box-text{
+  line-height: 1.6rem;
+}
+
+@media(max-width:1075px){
+  .service-box-img-container{
+    height: 36vh;
+    margin-top: .45rem;
+  }
+
+  /*The bolded service name above the service paragraph*/
+  .service-box-text-title{
+    font-size: .95rem;
+    margin-bottom: .5rem;
+  }
+
+  .service-box-text{
+    font-size: .9rem;
+    
+  }
+
+}
+
+@media(max-width:850px){
+  /*Decreased the font size and increased the line height*/
+  .page-title{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /*Holds the service image on the left and text on the right*/
+  .service-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-box-img-container{
+    width: 85%;
+    height: 63vh;
+    margin: 0 auto;
+  }
+
+  .service-box-text-container{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /*The bolded service name above the service paragraph*/
+  .service-box-text-title{
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media(max-width:650px){
+  .service-box-img-container{
+    height: 50vh;
+  }
+
+}

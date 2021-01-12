@@ -1,0 +1,134 @@
+:root{
+  --dark-black:#000000;
+  --regular-black:#0a0a0a;
+  --nero-black:#222222;
+  --slate-grey:#333333;
+  --grey25:#404040;
+  --dim-grey:#636363;
+  --gainsboro-grey:#dddddd;
+  --light-grey:#e1e1e1;
+  --site-white:#ffffff;
+  --site-whitesmoke:#f7f7f7;
+  --site-snow:#fbfbfb;
+  --site-gold:#ffe10b;
+  --site-medium-gold:#ffe30b;
+}
+
+.page-title{
+  color: var(--nero-black);
+  font-size: 2.75rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem 0 2.5rem 0;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
+
+.page-title::after{
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: solid var(--site-gold) thin;
+  padding-top: 2.5rem;
+}
+
+.page-subtitle{
+  color: var(--nero-black);
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.location-title-description{
+  color: var(--nero-black);
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.4rem;
+  margin-top: 3rem;
+}
+
+/*Grid holding the locations*/
+.locations-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 6rem auto;
+  width: 90%;
+}
+
+/*Location box holding the image and address info*/
+.location-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto 6rem auto;
+}
+
+.location-image-container{
+  width: 100%;
+  height: 25vh;
+}
+
+.location-image{
+  width: 100%;
+  height: 100%;
+}
+
+.location-box-name{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0 1.5rem 0;
+}
+
+/*Phone number in the location box*/
+.location-box-phone{
+  font-weight: bold;
+  margin: 0 0 .5rem 0;
+}
+
+@media(max-width:1000px){
+  /*Grid holding the locations*/
+  .locations-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 3rem auto;
+  }
+
+  /*Location box holding the image and address info*/
+  .location-box{
+    margin: 0 auto 3rem auto;
+  }
+
+  .location-image-container{
+    width: 75%;
+    height: 25vh;
+  }
+}
+
+@media(max-width:850px){
+  /*Decreased the font size and increased the line height*/
+  .page-title{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media(max-width:765px){
+  /*Grid holding the locations*/
+  .locations-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .location-image-container{
+    width: 52%;
+    height: 25vh;
+  }
+
+}

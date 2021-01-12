@@ -1,0 +1,103 @@
+:root{
+  --dark-black:#000000;
+  --regular-black:#0a0a0a;
+  --nero-black:#222222;
+  --slate-grey:#333333;
+  --grey25:#404040;
+  --dim-grey:#636363;
+  --gainsboro-grey:#dddddd;
+  --light-grey:#e1e1e1;
+  --site-white:#ffffff;
+  --site-whitesmoke:#f7f7f7;
+  --site-snow:#fbfbfb;
+  --site-gold:#ffe10b;
+  --site-medium-gold:#ffe30b;
+}
+
+.page-title{
+  color: var(--nero-black);
+  font-size: 2.75rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 6rem 0 2.5rem 0;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+}
+
+.page-title::after{
+  content: "";
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: solid var(--site-gold) thin;
+  padding-top: 2.5rem;
+}
+
+.page-subtitle{
+  color: var(--nero-black);
+  font-size: 1.55rem;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: .05rem;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+  line-height: 2.2rem;
+}
+
+/*Contact container holding text on the left and a form on the right*/
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+/*Contact text on the left side*/
+.contact-text-container{
+  width: 35%;
+}
+
+/*Contact form on the right side*/
+.contact-form{
+  display: grid;
+  grid-template-areas:
+  'first-name last-name'
+  'phone email'
+  'message message'
+  'submit-button submit-button';
+  width: 55%;
+}
+
+/*Holds the label and input for each field*/
+.contact-form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 1rem 0;
+}
+
+/*Assign inputs to grid areas*/
+.first-name{
+  grid-area: first-name;
+}
+
+.last-name{
+  grid-area: last-name;
+}
+
+.phone{
+  grid-area: phone;
+}
+
+.email{
+  grid-area: email;
+}
+
+.message{
+  grid-area: message;
+}
+
+.submit-button{
+  grid-area: submit-button;
+}
