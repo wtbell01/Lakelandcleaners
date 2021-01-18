@@ -25,17 +25,11 @@
         <li class="header-navigation-list-li"><a href="about.html" class="header-navigation-list-link">About</a></li>
         <li class="header-navigation-list-li"><a href="locations.html" class="header-navigation-list-link">Locations</a></li>
         <li class="header-navigation-list-li"><a href="services.html" class="header-navigation-list-link">Services</a></li>
-        <li class="header-navigation-list-li"><a href="#" class="header-navigation-list-link header-active-link">Delivery</a></li>
-        <li class="header-navigation-list-li"><a href="contact.html" class="header-navigation-list-link">Contact</a></li>
+        <li class="header-navigation-list-li"><a href="delivery.html" class="header-navigation-list-link">Delivery</a></li>
+        <li class="header-navigation-list-li"><a href="#" class="header-navigation-list-link header-active-link">Contact</a></li>
       </ul>
     </div>
   </div>
-
-  <!--Page title-->
-  <p class="page-title">Lakeland Delivers</p>
-  <!--Page subtitle-->
-  <p class="page-subtitle">With FREE pickup and delivery to your home, it’s now easier than ever to take advantage of
-  our award-winning dry cleaning services.</p>
 
   <!--Contact container with text on the left and the form on the right-->
   <div class="contact-container">
@@ -47,39 +41,23 @@
       <p class="contact-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse consequatur recusandae
       saepe aut voluptatum est quasi quae nemo eveniet iste!</p>
     </div>
+
     <!--Contact form-->
     <form action="" class="contact-form">
-      <!--Holds the label and input for each field(first name)-->
-      <div class="contact-form-group">
-        <label for="first-name" class="contact-label">First Name</label>
-        <input type="text" name="first-name" class="first-name" id="first-name">
-      </div>
-      <!--Holds the label and input for each field(last name)-->
-      <div class="contact-form-group">
-        <label for="last-name" class="contact-label">Last Name</label>
-        <input type="text" name="last-name" class="last-name" id="last-name">
-      </div>
-      <!--Holds the label and input for each field(phone)-->
-      <div class="contact-form-group">
-        <label for="phone" class="contact-label">Phone</label>
-        <input type="text" name="phone" class="phone" id="phone">
-      </div>
-      <!--Holds the label and input for each field(email)-->
-      <div class="contact-form-group">
-        <label for="email" class="contact-label">Email</label>
-        <input type="email" name="email" class="email" id="email">
-      </div>
-      <!--Holds the label and input for each field(message)-->
-      <div class="contact-form-group">
-        <label for="message" class="contact-label">Your Message</label>
-        <textarea name="message" class="message" id="message"></textarea>
-      </div>
-      <!--Submit Button-->
-      <button class="submit-button">Submit</button>
+      <!--Name input-->
+    <input type="text" class="name form-input" id="name" name="name" placeholder="Name">
+    <!--Email input-->
+    <input type="text" class="email form-input" id="email" name="email" placeholder="Email">
+    <!--Phone input-->
+    <input type="text" class="phone form-input" id="phone" name="phone" placeholder="Phone Number">
+    <!--Form container holding a label and input (Message)-->
+    <textarea name="message" class="message" id="message" placeholder="Your Message"></textarea>
+    <!--Button to submit the form-->
+    <button class="submit-button" id="submit-button" name="submit-button">Submit</button>
     </form>
   </div>
-  
 
+  <!--Footer-->
   <footer class="footer">
     <div class="footer-top-background">
       <div class="footer-top-container">
@@ -95,8 +73,12 @@
         <!--Footer box 2-->
         <div class="footer-box">
           <p class="footer-box-title">Follow Us</p>
-          <div class="footer-box-image-container">
-            <img src="" alt="" class="footer-box-image">
+          <div class="footer-box-2-image-container">
+            <img src="/img/office-building.jpg" alt="Lakeland Cleaners building" class="footer-box-2-image">
+            <div class="footer-box-2-links-container">
+               <a href="#" class="footer-box-2-link"><i class="fab fa-facebook-square"></i>Like Page</a>
+               <a href="#" class="footer-box-2-link"><i class="fas fa-envelope"></i>Send Message</a>
+            </div>
           </div>
         </div>
 
@@ -112,6 +94,7 @@
         </div>
       </div>
     </div>
+
     <!--Footer bottom-->
     <div class="footer-bottom-background">
       <div class="footer-bottom-container">
@@ -130,8 +113,5 @@
     </div>
   </footer>
 
-
-
-  
 </body>
 </html>

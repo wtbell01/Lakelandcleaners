@@ -31,6 +31,7 @@ body{
   --site-snow:#fbfbfb;
   --site-gold:#ffe10b;
   --site-medium-gold:#ffe30b;
+  --facebook-blue:#3a5897;
 }
 
 a{
@@ -39,6 +40,9 @@ a{
 
 .header-container{
   background-color: var(--dark-black);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 /*Header holding the flex display*/
@@ -49,7 +53,6 @@ a{
   width: 85%;
   margin: 0 auto;
   padding: 1.15rem 0;
-  
 }
 
 .header-logo-container{
@@ -181,7 +184,7 @@ a{
   border: solid var(--light-grey) 3px;
 }
 
-/*Right side of the hero containing text*/
+/*Right side of the hero containing an image*/
 .hero-right{
   width: 50%;
   
@@ -458,13 +461,58 @@ a{
 }
 
 .footer-box-2-image-container{
-  height: 28vh;
+  height: 26vh;
   width: 100%;
+  position: relative;
+}
+
+/*add a dark overlay on the image in footer box 2*/
+.footer-box-2-image-container::after{
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .footer-box-2-image{
   height: 100%;
   width: 100%;
+}
+
+/*Holds the 2 links inside of footer box 2*/
+.footer-box-2-links-container{
+  position: absolute;
+  top: 80%;
+  display: flex;
+  width: 90%;
+  margin: 0 0 0 1rem;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.footer-box-2-link{
+  background-color: var(--site-whitesmoke);
+  color: var(--slate-grey);
+  font-size: .65rem;
+  font-weight: bold;
+  padding: .15rem .5rem;
+}
+
+/*Facebook icon in the link within the footer image(box 2)*/
+.fa-facebook-square{
+  color: var(--facebook-blue);
+  margin-right: .3rem;
+  font-size: .9rem;
+}
+
+/*Envelope icon in the link within the footer image(box 2)*/
+.fa-envelope{
+  font-size: .8rem;
+  margin-right: .3rem;
 }
 
 .footer-bottom-background{
@@ -495,12 +543,6 @@ a{
   list-style: none;
 
 }
-
-.footer-bottom-social-container{
-  
-}
-
-/*Facebook logo in the footer*/
 
 @media(max-width:1040px){
   /*Hero section*/
@@ -536,7 +578,7 @@ a{
     line-height: 3rem;
   }
 
-  /*Right side of the hero containing text*/
+  /*Right side of the hero containing an image*/
   .hero-right{
     height: 75vh;
     width: 100%;
@@ -571,6 +613,22 @@ a{
 }
 
 @media(max-width:980px){
+  /*Header holding the flex display*/
+  .header{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+  }
+
+  .header-logo-container{
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  /*Navigation list in the header*/
+  .header-navigation-list{
+    width: 75%;
+  }
+
   /*Flex direction set to column and centers everything in the container*/
   .operations-container{
     display: flex;
@@ -633,9 +691,29 @@ a{
     font-size: .75rem;
     border: solid var(--site-white) 2.5px;
   }
+
+  .footer-box-2-link{
+    font-size: .6rem;
+    padding: .15rem .4rem;
+  }
+  
+  /*Facebook icon in the link within the footer image(box 2)*/
+  .fa-facebook-square{
+    margin-right: .15rem;
+  }
+  
+  /*Envelope icon in the link within the footer image(box 2)*/
+  .fa-envelope{
+    margin-right: .15rem;
+  }
 }
 
 @media(max-width:800px){
+  /*Navigation list in the header*/
+  .header-navigation-list{
+    width: 97%;
+  }
+
   /*Image background for the contact-location div*/
   .contact-location-background{
     height: 160vh;
@@ -657,6 +735,90 @@ a{
   .footer-box{
     width: 100%;
     margin-bottom: 4rem;
+  }
+
+  .footer-box-2-image-container{
+    height: 35vh;
+    width: 80%;
+  }
+
+  /*Facebook icon in the link within the footer image(box 2)*/
+  .fa-facebook-square{
+    margin-right: .3rem;
+  }
+  
+  /*Envelope icon in the link within the footer image(box 2)*/
+  .fa-envelope{
+    margin-right: .3rem;
+  }
+}
+
+
+@media(max-width:415px){
+  /*Navigation list in the header*/
+  .header-navigation-list{
+    width: 100%;
+  }
+
+  .header-navigation-list-li{
+    font-size: .7rem;
+  }
+
+  /*The "updates" link in the header navigation list*/
+  .header-updates-link{
+    font-size: .65rem;
+    letter-spacing: .05rem;
+    padding: .35rem .55rem;
+    border-radius: 3px;
+  }
+
+  .hero-left-description{
+    font-size: .8rem;
+    line-height: 1.4rem;
+    margin: 0 auto 2rem auto;
+    width: 95%;
+  }
+
+  /*Remove the image in the hero */
+  .hero-right{
+    display: none;
+  }
+
+  .delivery-notification-container-text{
+    font-size: 2rem;
+    font-family: 'Source Serif Pro', serif;
+    padding: 2rem 0;
+    line-height: 2.4rem;
+  }
+  
+  .contact-location-background{
+    display: none;
+  }
+
+  .footer-box-title{
+    font-size: 1.35rem;
+  }
+  
+  .footer-box-description{
+    font-size: .85rem;
+  }
+
+  .footer-bottom-background{
+    display: none;
+  }
+}
+
+@media(max-width:320px){
+  .header-navigation-list-li{
+    font-size: .6rem;
+  }
+
+  /*The "updates" link in the header navigation list*/
+  .header-updates-link{
+    font-size: .6rem;
+    letter-spacing: .05rem;
+    padding: .35rem .35rem;
+    border-radius: 3px;
   }
 }
 

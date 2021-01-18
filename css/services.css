@@ -104,8 +104,20 @@
 @media(max-width:850px){
   /*Decreased the font size and increased the line height*/
   .page-title{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin: 6rem auto 1.5rem auto;
+  }
+
+  .page-title::after{
+    padding-top: 1.5rem;
+  }
+
+  .page-subtitle{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.45rem;
+    line-height: 1.6rem;
   }
 
   /*Holds the service image on the left and text on the right*/
@@ -136,5 +148,35 @@
   .service-box-img-container{
     height: 50vh;
   }
+}
 
+@media(max-width:540px){
+  /*Decreased the font size and increased the line height*/
+  .page-title{
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .page-title::after{
+    padding-top: 1rem;
+  }
+  
+  .page-subtitle{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.35rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media(max-width:414px){
+  .service-box-img-container{
+    height: 30vh;
+    margin: .5rem auto;
+  }
+
+  .service-box-text{
+    font-size: .85rem;
+    line-height: 1.5rem;
+  }
 }

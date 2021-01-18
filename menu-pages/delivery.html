@@ -63,102 +63,21 @@
   
   <!-- The delivery form-->
   <form action="" class="delivery-form">
-    <!--Form container holding a label and input (First Name)-->
-    <div class="delivery-form-group">
-      <label for="first-name" class="form-label">First Name</label>
-      <input type="text" class="first-name form-input" id="first-name" name="first-name">
-    </div>
-    <!--Form container holding a label and input (Last Name)-->
-    <div class="delivery-form-group">
-      <label for="last-name" class="form-label">Last Name</label>
-      <input type="text" class="last-name form-input" id="last-name" name="last-name">
-    </div>
-    <!--Form container holding a label and input (Address)-->
-    <div class="delivery-form-group">
-      <label for="address" class="form-label">Address</label>
-      <input type="text" class="address form-input" id="address" name="address">
-    </div>
-    <!--Form container holding a label and input (City)-->
-    <div class="delivery-form-group">
-      <label for="city" class="form-label">City</label>
-      <input type="text" class="city form-input" id="city" name="city">
-    </div>
-    <!--Form container holding a label and input (State)-->
-    <div class="delivery-form-group">
-      <label for="state" class="form-label">State</label>
-      <select class="state form-dropdown" id="state" name="state">
-        <option value="alabama">AL</option>
-        <option value="alaska">AK</option>
-        <option value="arizona">AZ</option>
-        <option value="arkansas">AR</option>
-        <option value="california">CA</option>
-        <option value="colorado">CO</option>
-        <option value="connecticut">CT</option>
-        <option value="delaware">DE</option>
-        <option value="florida">FL</option>
-        <option value="georgia">GA</option>
-        <option value="hawaii">HI</option>
-        <option value="idaho">ID</option>
-        <option value="illinois">IL</option>
-        <option value="indiana">IN</option>
-        <option value="iowa">IA</option>
-        <option value="kansas">KS</option>
-        <option value="kentucky">KY</option>
-        <option value="louisiana">LA</option>
-        <option value="maine">ME</option>
-        <option value="maryland">MD</option>
-        <option value="massachusetts">MA</option>
-        <option value="michigan">MI</option>
-        <option value="minnesota">MN</option>
-        <option value="mississippi">MS</option>
-        <option value="missouri">MO</option>
-        <option value="montana">MT</option>
-        <option value="nebraska">NE</option>
-        <option value="nevada">NV</option>
-        <option value="new-hampshire">NH</option>
-        <option value="new-jersey">NJ</option>
-        <option value="new-mexico">NM</option>
-        <option value="new-york">NY</option>
-        <option value="north-carolina">NC</option>
-        <option value="north-dakota">ND</option>
-        <option value="ohio">OH</option>
-        <option value="oklahoma">OK</option>
-        <option value="oregon">OR</option>
-        <option value="pennsylvania">PA</option>
-        <option value="rhode-island">RI</option>
-        <option value="south-carolina">SC</option>
-        <option value="south-dakota">SD</option>
-        <option value="tennessee">TN</option>
-        <option value="texas">TX</option>
-        <option value="utah">UT</option>
-        <option value="vermont">VT</option>
-        <option value="virginia">VA</option>
-        <option value="washington">WA</option>
-        <option value="west virginia">WV</option>
-        <option value="wisconsin">WI</option>
-        <option value="wyoming">WY</option>    
-      </select>
-    </div>
-    <!--Form container holding a label and input (Phone)-->
-    <div class="delivery-form-group">
-      <label for="phone" class="form-label">Phone</label>
-      <input type="number" class="phone form-input" id="phone"  name="phone">
-    </div>
-    <!--Form container holding a label and input (Email)-->
-    <div class="delivery-form-group">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="email form-input" id="email" name="email">
-    </div>
+    <!--Name input-->
+    <input type="text" class="name form-input" id="name" name="name" placeholder="Name">
+    <!--Email input-->
+    <input type="text" class="email form-input" id="email" name="email" placeholder="Email">
+    <!--Subject input-->
+    <input type="text" class="subject form-input" id="subject" name="subject" placeholder="Subject">
+    <!--Phone input-->
+    <input type="text" class="phone form-input" id="phone" name="phone" placeholder="Phone Number">
     <!--Form container holding a label and input (Message)-->
-    <div class="delivery-form-group">
-      <label for="message" class="form-label">Your Message</label>
-      <textarea name="message" class="message" id="message"></textarea>
-    </div>
+    <textarea name="message" class="message" id="message" placeholder="Your Message"></textarea>
     <!--Button to submit the form-->
     <button class="submit-button" id="submit-button" name="submit-button">Submit</button>
   </form>
 
-
+  <!--Footer-->
   <footer class="footer">
     <div class="footer-top-background">
       <div class="footer-top-container">
@@ -174,8 +93,12 @@
         <!--Footer box 2-->
         <div class="footer-box">
           <p class="footer-box-title">Follow Us</p>
-          <div class="footer-box-image-container">
-            <img src="" alt="" class="footer-box-image">
+          <div class="footer-box-2-image-container">
+            <img src="/img/office-building.jpg" alt="Lakeland Cleaners building" class="footer-box-2-image">
+            <div class="footer-box-2-links-container">
+               <a href="#" class="footer-box-2-link"><i class="fab fa-facebook-square"></i>Like Page</a>
+               <a href="#" class="footer-box-2-link"><i class="fas fa-envelope"></i>Send Message</a>
+            </div>
           </div>
         </div>
 
@@ -191,6 +114,7 @@
         </div>
       </div>
     </div>
+
     <!--Footer bottom-->
     <div class="footer-bottom-background">
       <div class="footer-bottom-container">
@@ -208,9 +132,6 @@
       </div>
     </div>
   </footer>
-
-
-
   
 </body>
 </html>
